@@ -14,8 +14,7 @@ module.exports = {
                backgroundSecondary: "#020202",
             },
             fontFamily: {
-                hiBlack: ["hiBlack", ...defaultTheme.fontFamily.sans],
-                arrow: ["arrow", ...defaultTheme.fontFamily.serif],
+                salmaPro: ["salmaPro", ...defaultTheme.fontFamily.sans],
             },
         },
     },
