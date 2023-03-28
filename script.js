@@ -15,13 +15,13 @@ areas.forEach((area) => {
 
 function mouseOver(e) {
     const target = e.target;
-    const coords = target.getAttribute("coords").split(",");
+    const coords = target.getAttribute("coords").split(",").map(Number);
 
     //get the position and height based off of the coords
-    const left = parseInt(coords[0]);
-    const top = parseInt(coords[1]);
-    const width = parseInt(coords[2]) - left;
-    const height = parseInt(coords[3]) - top;
+    const left = coords[0];
+    const top = coords[1];
+    const width = coords[2] - left;
+    const height = coords[3] - top;
 
     const highlight = document.createElement("div");
     highlight.classList.add("highlight");
