@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+}
+
+.highlight {
+    pointer-events: none;
+    position: absolute;
+    border: 2px solid red;
+}
