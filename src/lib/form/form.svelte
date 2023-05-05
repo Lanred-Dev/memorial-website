@@ -4,24 +4,22 @@
         id: string;
         queryID: string;
     };
-    type formInputs = formInput[];
     type formOption = {
         id: string;
         value: any;
     };
-    type formOptions = formOption[];
 
     //component props
     export let endpoint: string = "";
-    export let inputs: formInputs = [];
+    export let inputs: formInput[] = [];
 
     import { goto } from "$app/navigation";
 
     let formElement: HTMLFormElement;
 
     //gets the options from the inputs and formats in the form of formOption
-    function getOptionsFromInputs(): formOptions {
-        let options: formOptions = [];
+    function getOptionsFromInputs(): formOption[] {
+        let options: formOption[] = [];
 
         //loop through the inputs
         inputs.forEach(({ id, queryID }: formInput) => {
@@ -42,7 +40,7 @@
 
     //handles the form submission
     function handleSubmit() {
-        let options: formOptions = getOptionsFromInputs();
+        let options: formOption[] = getOptionsFromInputs();
         let optionsQuery: string = "";
 
         //create the query
