@@ -1,9 +1,9 @@
 <script lang="ts">
     //import components
-    import RoundedRow from "./rounded-row.svelte";
-    import Input from "./input.svelte";
-    import Form from "./form.svelte";
-    import FormSubmit from "./form-submit.svelte";
+    import RoundedRow from "$lib/rounded-row.svelte";
+    import Input from "$lib/form/input.svelte";
+    import Form from "$lib/form/form.svelte";
+    import FormSubmit from "$lib/form/form-submit.svelte";
 
     //component props
     export let classes = "";
