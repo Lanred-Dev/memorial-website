@@ -1,21 +1,28 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+    //import the tailwind file for CSS
     import "$lib/tailwind.css";
 
-    function resizeContent(heightFulls: Array<HTMLElement>) {
+    import { onMount } from "svelte";
+
+    let heightScreenElements: HTMLElement[];
+
+    //fixes bug on IOS where the viewport space is bigger than the innerHeight
+    function resizeContent(heightFulls: HTMLElement[]) {
         heightFulls.forEach((element: HTMLElement) => {
             element.style.height = `${window.innerHeight}px`;
         });
     }
 
-    onMount(() => {
-        let heightScreenElements: Array<HTMLElement> = Array.from(document.querySelectorAll(".h-screen") as unknown as HTMLCollectionOf<HTMLElement>);
-
+    function updateHeightElements() {
+        heightScreenElements = Array.from(document.querySelectorAll(".h-screen") as unknown as HTMLCollectionOf<HTMLElement>);
         resizeContent(heightScreenElements);
-        window.addEventListener("resize", () => {
-            Array.from(document.querySelectorAll(".h-screen") as unknown as HTMLCollectionOf<HTMLElement>);
-            resizeContent(heightScreenElements);
-        });
+    }
+
+    onMount(() => {
+        updateHeightElements();
+
+        //update the height whenever the window is resized
+        window.addEventListener("resize", updateHeightElements);
     });
 </script>
 
