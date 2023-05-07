@@ -9,6 +9,10 @@ export function load({ url }: any) {
     const params: { [key: string]: string } = {
         name: url.searchParams.get("name") || null,
         county: url.searchParams.get("county") || null,
+        town: url.searchParams.get("town") || null,
+        deathLocation: url.searchParams.get("deathLocation") || null,
+        dob: url.searchParams.get("dob") || null,
+        dod: url.searchParams.get("dod") || null,
     };
     //allows the user to know if their search worked
     let validSearch: boolean = false;
