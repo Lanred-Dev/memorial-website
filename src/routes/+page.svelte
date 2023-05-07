@@ -22,7 +22,7 @@
 
     <section class="bg-modal px-5 lg:px-20 py-20 gap-10 lg:gap-20 flex flex-col items-center justify-between text-light">
         <div class="w-[90%] lg:w-[50%] h-[16rem] md:h-[27rem] bg-backgroundSecondaryComplement rounded-lg overflow-hidden">
-            <img class="object-cover" src="https://raw.githubusercontent.com/Lanred-Dev/memorial-website/Interactive-Map-Test/Vietnam_Test_Map.jpg">
+            <img class="object-cover" src="https://raw.githubusercontent.com/Lanred-Dev/memorial-website/Interactive-Map-Test/Vietnam_Test_Map.jpg" alt="memorial">
         </div>
 
         <header class="w-[90%] lg:w-[50%]">
