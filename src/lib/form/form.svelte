@@ -1,4 +1,9 @@
 <script lang="ts">
+    //component props
+    export let endpoint: string = "";
+    export let inputs: formInput[] = [];
+    export let classes: string = "";
+
     //component types
     type formInput = {
         id: string;
@@ -9,12 +14,7 @@
         value: any;
     };
 
-    //component props
-    export let endpoint: string = "";
-    export let inputs: formInput[] = [];
-
     import { goto } from "$app/navigation";
-
     let formElement: HTMLFormElement;
 
     //gets the options from the inputs and formats in the form of formOption
@@ -45,7 +45,7 @@
 
         //create the query
         options.forEach(({ id, value }: formOption) => {
-            optionsQuery = `${optionsQuery.length === 0 ? "" : "&"}${id}=${value}`;
+            optionsQuery = `${optionsQuery}${optionsQuery.length === 0 ? "" : "&"}${id}=${value}`;
         });
 
         //redirect to the endpoint
@@ -53,6 +53,6 @@
     }
 </script>
 
-<form on:submit|preventDefault={handleSubmit} bind:this={formElement}>
+<form class={classes} on:submit|preventDefault={handleSubmit} bind:this={formElement}>
     <slot />
 </form>
