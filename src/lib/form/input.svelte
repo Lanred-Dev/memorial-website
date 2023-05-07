@@ -7,4 +7,4 @@
     export let value: any = "";
 </script>
 
-<input class="outline-none placeholder-slate-300 text-slate-50 bg-slate-700 {classes}" placeholder={placeholder} type={type} value={value} data-id={id} />
+<input class="outline-none placeholder-[#F5F5F5] {classes}" placeholder={placeholder} type={type} value={value} data-id={id} />

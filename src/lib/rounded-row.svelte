@@ -11,6 +11,6 @@
     };
 </script>
 
-<div class="bg-slate-700 border-[3px] border-gray-600 flex overflow-hidden {classes}" style="border-radius: {roundSizes[rounded]};">
+<div class="flex overflow-hidden {classes}" style="border-radius: {roundSizes[rounded]};">
     <slot />
 </div>

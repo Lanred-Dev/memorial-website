@@ -26,6 +26,6 @@
     });
 </script>
 
-<main class="w-screen h-screen overflow-hidden box-border select-text font-salmaPro font-bold text-center text-white">
+<main class="w-screen h-screen overflow-hidden select-text font-salmaPro text-center text-primary">
     <slot />
 </main>

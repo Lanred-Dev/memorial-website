@@ -6,12 +6,20 @@ module.exports = {
     theme: {
         extend: {
             textColor: {
-                light: "#bdbebe",
-                extraLight: "#3a3a3a",
+                primary: "#222222",
+                secondary: "#333333",
+                highlight: "#FDB813",
+                light: "#FFFFFF",
             },
             colors: {
-               background: "#050505", 
-               backgroundSecondary: "#020202",
+               background: "#FFFFFF", 
+               backgroundSecondary: "#F5F5F5",
+               backgroundSecondaryComplement: "#D5D5D5",
+               accent: "#BF0A30",
+               accentSecondary: "#002868",
+               modal: "#2B2B2B",
+               modalSecondary: "#333333",
+               highlight: "#FDB813",
             },
             fontFamily: {
                 salmaPro: ["salmaPro", ...defaultTheme.fontFamily.sans],
