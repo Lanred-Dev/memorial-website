@@ -1,5 +1,6 @@
 <script lang="ts">
-    //import the tailwind file for CSS
+    //import components
+    import Footer from "$lib/footer.svelte";
     import "$lib/tailwind.css";
 
     import { onMount } from "svelte";
@@ -26,6 +27,8 @@
     });
 </script>
 
-<main class="w-screen h-screen overflow-hidden select-text font-salmaPro text-center text-primary">
+<main class="w-full h-auto overflow-hidden select-text font-salmaPro text-center text-primary">
     <slot />
 </main>
+
+<Footer />
