@@ -39,7 +39,7 @@
     }
 
     //handles the form submission
-    function handleSubmit() {
+    function submit() {
         let options: formOption[] = getOptionsFromInputs();
         let optionsQuery: string = "";
 
@@ -53,6 +53,6 @@
     }
 </script>
 
-<form class={classes} on:submit|preventDefault={handleSubmit} bind:this={formElement}>
+<form class={classes} on:submit|preventDefault={submit} bind:this={formElement}>
     <slot />
 </form>
