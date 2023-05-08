@@ -24,7 +24,6 @@
     }
 
     function focus() {
-        console.log("A")
         if (input.value.length === 0) return toggleClearButton(false);
 
         toggleClearButton(true);
