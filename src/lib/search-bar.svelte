@@ -32,7 +32,7 @@
 
 <div class="inline-block {classes}">
     <Form
-        classes="mb-3 text-light"
+        classes="{showAdvancedSearch === false ? "mb-3" : ""} text-light"
         endpoint="search"
         inputs={[{ id: "name-input", queryID: "name" }].concat(
             inputs.map(({ id, queryID }) => {
@@ -54,7 +54,7 @@
         {#if showAdvancedSearch === true}
             <div class="w-full flex justify-between gap-3 px-12 mt-3">
                 {#each inputs as input}
-                    <Input classes="px-5 py-2 w-full text-base rounded-full border-[3px] border-modalSecondary bg-modal" placeholder={input.placeholder} id={input.id} value={getValueFromQuery(input.queryID)} />
+                    <Input classes="px-5 py-2 w-full rounded-full border-[3px] border-modalSecondary bg-modal text-base" placeholder={input.placeholder} id={input.id} value={getValueFromQuery(input.queryID)} />
                 {/each}
             </div>
         {/if}
