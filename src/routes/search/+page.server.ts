@@ -26,7 +26,7 @@ export function load({ url }: any) {
         //was a valid search as it contained a valid param
         validSearch = true;
         //filter out the param
-        filtered = filtered.filter((person: any) => person[param].includes(params[param]));
+        filtered = filtered.filter((person: any) => person[param].toLowerCase().includes(params[param].toLowerCase()));
     });
 
     return {
