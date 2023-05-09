@@ -9,7 +9,7 @@
     let startingCompact: boolean = compact;
 
     onMount(() => {
-        startingCompact = compact
+        startingCompact = compact;
 
         if (startingCompact === true) return;
 

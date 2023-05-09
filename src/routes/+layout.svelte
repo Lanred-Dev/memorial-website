@@ -1,6 +1,6 @@
 <script lang="ts">
     //import components
-    import Footer from "$lib/footer.svelte";
+    import Footer from "$lib/components/footer.svelte";
     import "$lib/tailwind.css";
 
     import { onMount } from "svelte";
