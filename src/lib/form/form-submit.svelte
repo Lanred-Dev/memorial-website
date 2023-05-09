@@ -1,8 +1,8 @@
 <script lang="ts">
-        //component props
+    //component props
     export let classes: string = "";
 </script>
 
 <button class={classes} type="submit">
-    <slot></slot>
+    <slot />
 </button>

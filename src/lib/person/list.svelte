@@ -1,6 +1,6 @@
 <script lang="ts">
     //import components
-    import PersonCard from "./person-card.svelte";
+    import PersonCard from "$lib/person/card.svelte";
 
     //component props
     export let people: any;

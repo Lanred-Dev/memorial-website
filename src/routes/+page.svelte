@@ -1,7 +1,7 @@
 <script lang="ts">
     //import components
     import SearchBar from "$lib/search-bar.svelte";
-    import PersonList from "$lib/person-list.svelte";
+    import PersonList from "$lib/person/list.svelte";
     import Highlight from "$lib/highlight.svelte";
     import { onDestroy, onMount } from "svelte";
 
