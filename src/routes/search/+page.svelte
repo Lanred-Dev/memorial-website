@@ -1,7 +1,7 @@
 <script lang="ts">
     //import components
     import SearchBar from "$lib/search-bar.svelte";
-    import PersonList from "$lib/person-list.svelte";
+    import PersonList from "$lib/person/list.svelte";
 
     export let data: { validSearch: boolean; people: Array<any> } = { validSearch: true, people: [] };
 </script>
@@ -14,7 +14,14 @@
 
     <div class="h-full py-10 bg-modal">
         {#if data.validSearch === true}
-            <PersonList people={data.people} />
+            {#if data.people.length === 0}
+                <div class="text-light">
+                    <h2>no results</h2>
+                    <p>maybe try some different ones?</p>
+                </div>
+            {:else}
+                <PersonList people={data.people} />
+            {/if}
         {:else}
             <div class="text-light">
                 <h2>invalid seach</h2>
