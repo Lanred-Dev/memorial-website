@@ -1,6 +1,5 @@
 <script lang="ts">
     //import components
-    import Footer from "$lib/components/footer.svelte";
     import "$lib/tailwind.css";
 
     import { onMount } from "svelte";
@@ -30,5 +29,3 @@
 <main class="w-full h-auto overflow-hidden select-text font-salmaPro text-center text-primary">
     <slot />
 </main>
-
-<Footer />

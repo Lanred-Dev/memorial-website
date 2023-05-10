@@ -3,6 +3,7 @@
     import Header from "$lib/pages/index/header.svelte";
     import About from "$lib/pages/index/about.svelte";
     import WallOfFaces from "$lib/pages/index/wall-of-faces.svelte";
+    import Footer from "$lib/pages/index/footer.svelte";
 
     //contains the list of people
     export let data: { people: Array<any> } = { people: [] };
@@ -11,3 +12,4 @@
 <Header />
 <About />
 <WallOfFaces {data} />
+<Footer />
