@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Upbeat-Roblox/frontend"
+		"url": "https://github.com/Lanred-Dev/memorial-website"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^1.0.0-next.98",
