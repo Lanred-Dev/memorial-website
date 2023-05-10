@@ -1,8 +1,6 @@
 import { readFileSync } from "fs";
 const people: Array<any> = JSON.parse(readFileSync("people.json") as unknown as string);
 
-//TODO: find a different way to filter through the people array, current way may cause problems with a bigger list
-
 function filterParam(databaseValue: any, userValue: any): boolean {
     if (typeof databaseValue === "string") {
         return databaseValue.toLowerCase().includes((userValue as string).toLowerCase());
