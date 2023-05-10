@@ -8,15 +8,11 @@
     let heightScreenElements: HTMLElement[];
 
     //fixes bug on IOS where the viewport space is bigger than the innerHeight
-    function resizeContent(heightFulls: HTMLElement[]) {
-        heightFulls.forEach((element: HTMLElement) => {
-            element.style.height = `${window.innerHeight}px`;
-        });
-    }
-
     function updateHeightElements() {
         heightScreenElements = Array.from(document.querySelectorAll(".h-screen") as unknown as HTMLCollectionOf<HTMLElement>);
-        resizeContent(heightScreenElements);
+        heightScreenElements.forEach((element: HTMLElement) => {
+            element.style.height = `${window.innerHeight}px`;
+        });
     }
 
     onMount(() => {
