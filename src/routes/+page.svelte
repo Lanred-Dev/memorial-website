@@ -14,4 +14,4 @@
 
 <Header />
 <About />
-<WallOfFaces />
+<WallOfFaces {data} />
