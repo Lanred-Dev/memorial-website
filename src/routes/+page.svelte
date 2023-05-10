@@ -8,10 +8,6 @@
     export let data: { people: Array<any> } = { people: [] };
 </script>
 
-<svelte:head>
-    <title>Cullman Veteran Memorial</title>
-</svelte:head>
-
 <Header />
 <About />
 <WallOfFaces {data} />

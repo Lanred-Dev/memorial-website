@@ -27,6 +27,10 @@
     });
 </script>
 
+<svelte:head>
+    <title>Cullman Veteran Memorial</title>
+</svelte:head>
+
 <main class="w-full h-auto overflow-hidden select-text font-salmaPro text-center text-primary">
     <slot />
 </main>
