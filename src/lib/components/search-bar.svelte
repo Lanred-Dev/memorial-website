@@ -1,10 +1,10 @@
 <script lang="ts">
     //import components
-    import ToggleButton from "./button/toggle.svelte";
-    import RoundedRow from "$lib/rounded-row.svelte";
-    import Input from "$lib/form/input.svelte";
-    import Form from "$lib/form/form.svelte";
-    import FormSubmit from "$lib/form/form-submit.svelte";
+    import ToggleButton from "$lib/components/button/toggle.svelte";
+    import RoundedRow from "$lib/components/container/rounded-row.svelte";
+    import Input from "$lib/components/form/input.svelte";
+    import Form from "$lib/components/form/form.svelte";
+    import FormSubmit from "$lib/components/form/form-submit.svelte";
 
     //component props
     export let classes: string = "";

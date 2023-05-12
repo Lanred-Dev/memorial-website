@@ -16,8 +16,12 @@
     }
 
     onMount(() => {
+<<<<<<< HEAD:src/lib/person/card.svelte
         //already compact no need
         if (compact === true) return;
+=======
+        startingCompact = compact;
+>>>>>>> 8903d87614da458863819264a8aabbad3113a489:src/lib/components/container/person-card.svelte
 
         window.addEventListener("resize", determineCompact);
     });
