@@ -3,7 +3,7 @@
     export let person: any;
     export let compact: boolean = false;
 
-    import { onDestroy, onMount } from "svelte";
+    import { onMount } from "svelte";
     import { format } from "date-fns";
 
     //determine if we need to swap to compact mode due to screen size
@@ -16,21 +16,10 @@
     }
 
     onMount(() => {
-<<<<<<< HEAD:src/lib/person/card.svelte
         //already compact no need
         if (compact === true) return;
-=======
-        startingCompact = compact;
->>>>>>> 8903d87614da458863819264a8aabbad3113a489:src/lib/components/container/person-card.svelte
 
         window.addEventListener("resize", determineCompact);
-    });
-
-    onDestroy(() => {
-        //we never created an event as it is already compact
-        if (compact === true) return;
-
-        window.removeEventListener("resize", determineCompact);
     });
 </script>
 
