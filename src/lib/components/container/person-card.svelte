@@ -8,7 +8,7 @@
 
     //determine if we need to swap to compact mode due to screen size
     function determineCompact() {
-        if (window.innerWidth <= 500) {
+        if (window.innerWidth <= 650) {
             compact = true;
         } else {
             compact = false;
