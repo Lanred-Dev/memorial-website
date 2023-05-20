@@ -1,9 +1,4 @@
 <script lang="ts">
-    //component props
-    export let endpoint: string = "";
-    export let inputs: formInput[] = [];
-    export let classes: string = "";
-
     //component types
     type formInput = {
         id: string;
@@ -13,6 +8,11 @@
         id: string;
         value: any;
     };
+
+    //component props
+    export let endpoint: string = "";
+    export let inputs: formInput[] = [];
+    export let classes: string = "";
 
     import { goto } from "$app/navigation";
     let formElement: HTMLFormElement;
