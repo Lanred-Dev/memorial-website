@@ -25,7 +25,7 @@
         if (targetPosition >= 0) {
             targetPosition = 0;
         } else if (targetPosition <= -scrollContainer.clientWidth) {
-            targetPosition = -(scrollContainer.clientWidth - (150));
+            targetPosition = -(scrollContainer.clientWidth - (container.getBoundingClientRect().width / 2));
         }
 
         scrollPosition = targetPosition;
@@ -33,11 +33,11 @@
     }
 
     function scrollLeft() {
-        scroll(container.clientWidth - 150);
+        scroll(container.getBoundingClientRect().width);
     }
 
     function scrollRight() {
-        scroll(-(container.clientWidth - 150));
+        scroll(-(container.getBoundingClientRect().width));
     }
 
     onMount(async () => {
