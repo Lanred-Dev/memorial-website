@@ -38,7 +38,7 @@ export function load({ url }: any) {
     let validSearch: boolean = false;
     //to be filtered by the params
     let filtered: Array<any> = people;
-    console.log(url.searchParams.get("dob"))
+
     Object.keys(params).forEach((param: string) => {
         //check to make sure the param value is valid
         if ((params[param] instanceof Date) !== true && typeof params[param] !== "string" && checkLengthIfString(params[param]) === true) return;

@@ -16,24 +16,26 @@
     }
 
     onMount(() => {
-        //already compact no need
+        //already compact no need for this then
         if (compact === true) return;
 
         window.addEventListener("resize", determineCompact);
     });
 </script>
 
-<li class="border-[3px] rounded-lg border-modalSecondary flex overflow-hidden {compact === false ? 'w-[100%] lg:w-[40%] h-36 bg-backgroundSecondaryComplement' : 'w-28 lg:w-36 aspect-square'}">
-    <img class="h-full group-hover:rounded-r-none" src={person.picture} alt={person.name} />
+<li class="border-[3px] rounded-lg border-modalSecondary overflow-hidden {compact === false ? 'w-[100%] lg:w-[40%] h-36 bg-backgroundSecondaryComplement' : 'w-28 lg:w-36 aspect-square'}">
+    <a class="w-full h-full flex" href="/person/">
+        <img class="h-full group-hover:rounded-r-none" src={person.picture} alt={person.name} />
 
-    {#if compact === false}
-        <section class="w-full h-full px-7 p-5 text-left border-l-[2px] border-modalSecondary">
-            <header class="mb-2">
-                <p class="text-lg">{person.name}</p>
-                <p class="text-sm text-secondary">{format(person.dob, "MM/dd/yyyy")} - {format(person.dod, "MM/dd/yyyy")}</p>
-            </header>
+        {#if compact === false}
+            <section class="w-full h-full px-7 p-5 text-left border-l-[2px] border-modalSecondary">
+                <header class="mb-2">
+                    <p class="text-lg">{person.name}</p>
+                    <p class="text-sm text-secondary">{format(person.dob, "MM/dd/yyyy")} - {format(person.dod, "MM/dd/yyyy")}</p>
+                </header>
 
-            <p>{person.bio !== undefined ? person.bio : "This person has no bio."}</p>
-        </section>
-    {/if}
+                <p>{person.bio !== undefined ? person.bio : "This person has no bio."}</p>
+            </section>
+        {/if}
+    </a>
 </li>

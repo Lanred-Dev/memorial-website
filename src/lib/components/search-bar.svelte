@@ -12,7 +12,7 @@
 
     import { page } from "$app/stores";
     let queryParams: URLSearchParams = null as any;
-    const inputs = [
+    const inputs: { id: string; queryID: string; placeholder: string }[] = [
         { id: "county-input", queryID: "county", placeholder: "county" },
         { id: "town-input", queryID: "town", placeholder: "town" },
         { id: "deathLocation-input", queryID: "deathLocation", placeholder: "casualty province" },
@@ -32,7 +32,7 @@
 
 <div class="inline-block {classes}">
     <Form
-        classes="{showAdvancedSearch === false ? "mb-3" : ""} text-light"
+        classes="{showAdvancedSearch === false ? 'mb-3' : ''} text-light"
         endpoint="search"
         inputs={[{ id: "name-input", queryID: "name" }].concat(
             inputs.map(({ id, queryID }) => {
