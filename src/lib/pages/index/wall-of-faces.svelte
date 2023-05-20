@@ -3,7 +3,7 @@
     import PersonList from "$lib/components/container/person-list.svelte";
     import ArrowButton from "./arrow-button.svelte";
 
-    import { onMount, onDestroy } from "svelte";
+    import { onMount } from "svelte";
     let people: Array<any> = [];
     let container: HTMLDivElement;
     let scrollContainer: HTMLDivElement;
