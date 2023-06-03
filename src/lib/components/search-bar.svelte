@@ -52,9 +52,9 @@
         </RoundedRow>
 
         {#if showAdvancedSearch === true}
-            <div class="mt-3 flex w-full justify-between gap-3 px-12">
+            <div class="mt-3 flex w-full flex-col justify-between gap-1.5 lg:gap-3 px-3 lg:flex-row lg:px-12">
                 {#each inputs as input}
-                    <Input classes="px-5 py-2 w-full rounded-full border-[3px] border-modalSecondary bg-modal text-base" placeholder={input.placeholder} id={input.id} value={getValueFromQuery(input.queryID)} />
+                    <Input classes="px-5 py-2 w-full rounded-full border-[3px] border-modalSecondary bg-modal text-sm md:text-base" placeholder={input.placeholder} id={input.id} value={getValueFromQuery(input.queryID)} />
                 {/each}
             </div>
         {/if}
