@@ -4,7 +4,7 @@
     export let click: any = () => {};
 </script>
 
-<button class="absolute z-[2] top-1/2 -translate-y-1/2 bg-highlight border-[3px] rounded-lg border-modalSecondary {classes}" on:click={click}>
+<button class="absolute top-1/2 z-[2] -translate-y-1/2 rounded-lg border-[3px] border-modalSecondary bg-highlight {classes}" on:click={click}>
     <div class="aspect-square p-2">
         <slot />
     </div>

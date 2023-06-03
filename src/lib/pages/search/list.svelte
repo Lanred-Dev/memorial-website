@@ -6,7 +6,7 @@
     export let data: { validSearch: boolean; people: Array<any> } = { validSearch: true, people: [] };
 </script>
 
-<div class="h-full py-10 bg-modal">
+<div class="h-full bg-modal py-10">
     {#if data.validSearch === true}
         {#if data.people.length === 0}
             <div class="text-light">

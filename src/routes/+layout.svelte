@@ -68,6 +68,6 @@
     <title>Cullman Veteran Memorial</title>
 </svelte:head>
 
-<main class="w-full h-auto overflow-hidden select-text font-salmaPro text-center text-primary">
+<main class="h-auto w-full select-text overflow-hidden text-center font-salmaPro text-primary">
     <slot />
 </main>

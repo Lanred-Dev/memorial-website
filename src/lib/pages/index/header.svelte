@@ -15,13 +15,13 @@
     });
 </script>
 
-<header class="bg-backgroundSecondary h-screen lg:h-[80vh] flex flex-col justify-center items-center gap-8 px-12 py-[15%] md:py-10 relative">
-    <div class="flex flex-col items-center gap-4 z-[1]">
+<header class="relative flex h-screen flex-col items-center justify-center gap-8 bg-backgroundSecondary px-12 py-[15%] md:py-10 lg:h-[80vh]">
+    <div class="z-[1] flex flex-col items-center gap-4">
         <h1 class="text-4xl md:text-6xl">Cullman Veteran Memorial</h1>
         <p class="text-lg md:text-2xl lg:max-w-[60%]">The Cullman Veteran Memorial is dedicated to honoring every person whose name is insribed on the Cullman Veteran Memorial in Cullman, AL.</p>
     </div>
 
-    <div class="absolute bottom-20 bg-highlight p-1 px-3 rounded-md z-[1]">
-        <p class="text-primary font-bold">{date}</p>
+    <div class="absolute bottom-20 z-[1] rounded-md bg-highlight p-1 px-3">
+        <p class="font-bold text-primary">{date}</p>
     </div>
 </header>

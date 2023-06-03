@@ -10,7 +10,7 @@
     import { twMerge } from "tailwind-merge";
 </script>
 
-<ul class={twMerge("flex flex-wrap justify-center items-start gap-10 px-10 lg:px-0", classes)}>
+<ul class={twMerge("flex flex-wrap items-start justify-center gap-10 px-10 lg:px-0", classes)}>
     {#each people as person}
         <PersonCard {person} compact={compactCards} />
     {/each}

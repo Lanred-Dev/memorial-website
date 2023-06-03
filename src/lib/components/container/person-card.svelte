@@ -23,12 +23,12 @@
     });
 </script>
 
-<li class="border-[3px] rounded-lg border-modalSecondary overflow-hidden {compact === false ? 'w-[100%] lg:w-[40%] h-36 bg-backgroundSecondaryComplement' : 'w-28 lg:w-36 aspect-square'}">
-    <a class="w-full h-full flex" href="/person/">
+<li class="overflow-hidden rounded-lg border-[3px] border-modalSecondary {compact === false ? 'h-36 w-[100%] bg-backgroundSecondaryComplement lg:w-[40%]' : 'aspect-square w-28 lg:w-36'}">
+    <a class="flex h-full w-full" href="/person/">
         <img class="h-full group-hover:rounded-r-none" src={person.picture} alt={person.name} />
 
         {#if compact === false}
-            <section class="w-full h-full px-7 p-5 text-left border-l-[2px] border-modalSecondary">
+            <section class="h-full w-full border-l-[2px] border-modalSecondary p-5 px-7 text-left">
                 <header class="mb-2">
                     <p class="text-lg">{person.name}</p>
                     <p class="text-sm text-secondary">{format(person.dob, "MM/dd/yyyy")} - {format(person.dod, "MM/dd/yyyy")}</p>

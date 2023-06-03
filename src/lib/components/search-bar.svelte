@@ -47,12 +47,12 @@
             <Input classes="px-5 py-2 w-full bg-transparent" placeholder="name" id="name-input" value={getValueFromQuery("name")} />
 
             <FormSubmit classes="w-[64px] h-[44px] flex justify-center items-center py-2.5 bg-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-full aspect-square fill-white"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="aspect-square h-full fill-white"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z" /></svg>
             </FormSubmit>
         </RoundedRow>
 
         {#if showAdvancedSearch === true}
-            <div class="w-full flex justify-between gap-3 px-12 mt-3">
+            <div class="mt-3 flex w-full justify-between gap-3 px-12">
                 {#each inputs as input}
                     <Input classes="px-5 py-2 w-full rounded-full border-[3px] border-modalSecondary bg-modal text-base" placeholder={input.placeholder} id={input.id} value={getValueFromQuery(input.queryID)} />
                 {/each}

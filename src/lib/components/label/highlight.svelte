@@ -1,3 +1,3 @@
-<span class="bg-highlight text-primary font-bold px-0.5 rounded-sm">
+<span class="rounded-sm bg-highlight px-0.5 font-bold text-primary">
     <slot />
 </span>
