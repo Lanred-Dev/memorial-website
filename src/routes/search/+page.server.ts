@@ -34,6 +34,8 @@ export function load({ url }: any) {
         dob: url.searchParams.get("dob") ? new Date(parseInt(url.searchParams.get("dob"))) : null,
         dod: url.searchParams.get("dod") ? new Date(parseInt(url.searchParams.get("dod"))) : null,
     };
+    //allows the first search page to show for the user
+    let isSearch: boolean = false;
     //allows the user to know if their search worked
     let validSearch: boolean = false;
     //to be filtered by the params
@@ -45,11 +47,13 @@ export function load({ url }: any) {
 
         //was a valid search as it contained a valid param
         validSearch = true;
+        isSearch = true;
         //filter out the param
         filtered = filtered.filter((person: any) => filterParam(person[param], params[param]));
     });
 
     return {
+        isSearch,
         validSearch,
         people: validSearch !== false ? filtered : null,
     };

@@ -6,5 +6,5 @@
     export let data: any;
 </script>
 
-<Header />
+<Header isSearch={data.isSearch} />
 <List {data} />
