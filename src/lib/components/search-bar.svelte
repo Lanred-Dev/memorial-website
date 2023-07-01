@@ -32,7 +32,7 @@
 
 <div class="inline-block {classes}">
     <Form
-        classes="{showAdvancedSearch === false ? 'mb-3' : ''} text-light"
+        classes="text-light"
         endpoint="search"
         inputs={[{ id: "name-input", queryID: "name" }].concat(
             inputs.map(({ id, queryID }) => {
@@ -61,6 +61,6 @@
     </Form>
 
     {#if simpleSearch === true}
-        <ToggleButton classes="ml-2 text-base text-left w-full" bind:variable={showAdvancedSearch}>{showAdvancedSearch === true ? "hide " : ""}advanced search</ToggleButton>
+        <ToggleButton classes="ml-5 text-base text-left w-full mt-2" bind:variable={showAdvancedSearch}>{showAdvancedSearch === true ? "hide " : ""}advanced search</ToggleButton>
     {/if}
 </div>

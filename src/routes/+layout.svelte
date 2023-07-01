@@ -1,6 +1,6 @@
 <script lang="ts">
     //import components
-    import "$lib/tailwind.css";
+    import "$lib/components/tailwind.css";
 
     import { onMount } from "svelte";
     let heightScreenElements: HTMLElement[];
