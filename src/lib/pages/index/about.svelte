@@ -5,7 +5,7 @@
 
 <section class="flex flex-col items-center justify-between gap-10 bg-modal px-5 py-20 text-light lg:gap-20 lg:px-20">
     <div class="h-[16rem] w-[90%] overflow-hidden rounded-lg border-[3px] border-modalSecondary bg-backgroundSecondaryComplement md:h-[27rem] lg:w-[50%]">
-        <img class="object-cover" src="https://raw.githubusercontent.com/Lanred-Dev/memorial-website/Interactive-Map-Test/Vietnam_Test_Map.jpg" alt="memorial" />
+        <img class="object-fit" src="https://raw.githubusercontent.com/Lanred-Dev/memorial-website/Interactive-Map-Test/Vietnam_Test_Map.jpg" alt="memorial" />
     </div>
 
     <header class="w-[90%] lg:w-[50%]">
