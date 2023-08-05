@@ -1,6 +1,7 @@
 entrypoint = "build/index.js"
 
 hidden = [".config"]
+run = "cowsay Configure me!"
 
 [interpreter]
 command = [
